@@ -1,0 +1,104 @@
+/* ===== GENERAL ===== */
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f6ff;
+  text-align: center;
+}
+
+/* ===== TABLE ===== */
+table {
+  margin: auto;
+  border-collapse: collapse;
+  width: 95%;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background: #0072ff;
+  color: white;
+}
+
+/* ===== STATUS COLORS ===== */
+.status-pending {
+  color: red;
+  font-weight: bold;
+}
+
+.status-review {
+  color: orange;
+  font-weight: bold;
+}
+
+.status-resolved {
+  color: green;
+  font-weight: bold;
+}
+
+/* ===== ACTION BUTTONS ===== */
+.action-review {
+  background-color: #007bff;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 6px;
+}
+
+.action-resolve {
+  background-color: #28a745;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 6px;
+}
+
+.action-delete {
+  background-color: #dc3545;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* ===== HOVER ===== */
+.action-review:hover,
+.action-resolve:hover,
+.action-delete:hover {
+  opacity: 0.85;
+  cursor: pointer;
+}
+
+/* ===== DASHBOARD STATS ===== */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.card {
+  background: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px #ccc;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card.pending {
+  border-top: 5px solid red;
+}
+
+.card.review {
+  border-top: 5px solid orange;
+}
+
+.card.resolved {
+  border-top: 5px solid green;
+}

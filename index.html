@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pollution Complaint</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<h2>Pollution Complaint Form</h2>
+
+<form method="POST" action="/submit">
+  <input name="location" placeholder="Location" required><br><br>
+  <input name="pollution_type" placeholder="Air / Water / Noise" required><br><br>
+  <textarea name="description" placeholder="Description" required></textarea><br><br>
+  <button type="submit">Submit</button>
+</form>
+
+<br>
+<a href="/admin">Admin Login</a>
+
+</body>
+</html>
